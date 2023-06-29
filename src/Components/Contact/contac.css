@@ -130,7 +130,12 @@ input[type=text],[type=email], textarea {
     font-size: 2.5vmin;
 }
 
-
+h7{
+    font-size: 11px;
+    padding: 3px;
+    align-items: center;
+    color:rgb(156, 156, 156);
+}
 /* =================================================mobile view================================== */
 
 @media only screen and (max-width: 950px) {

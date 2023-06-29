@@ -1,15 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './contac.css'
 
 
 const ContactUs = () => {
     const form = useRef();
+    const [ user_name, setUser_name] = useState();
+    const [ user_email, setUser_email] = useState();
+    const [ Message, setMessage] = useState();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
+    emailjs.sendForm(
             process.env.REACT_APP_YOUR_SERVICE_ID,
             process.env.REACT_APP_YOUR_TEMPLATE_ID,
             form.current,
@@ -19,6 +22,10 @@ const ContactUs = () => {
             }, (error) => {
                 console.log(error.text);
             });
+            alert('Thank you '+ user_name +' for submiting form');
+            setUser_name('');
+            setUser_email('');
+            setMessage('');
     };
 
     return (
@@ -47,12 +54,12 @@ const ContactUs = () => {
                 <div className='lower-part'>
                     <div className='left-side-content'>
                         <form ref={form} onSubmit={sendEmail}>
-                            <label>Name:</label>
-                            <input type="text" name="user_name" placeholder='Enter your name' required /><br />
-                            <label>Email:</label>
-                            <input type="email" name="user_email" placeholder='enter your email' required /><br />
-                            <label>Message:</label>
-                            <textarea name="message" placeholder='Message the queries/ anything to ask (in Telugu/English)' /><br />
+                            <label>Name:<h7>Enter your Name </h7></label>
+                            <input type="text" name="user_name" onChange={e=>setUser_name(e.target.value)} value={user_name || ' '} required /> <br />
+                            <label>Email:<h7>Enter your Email </h7></label>
+                            <input type="email" name="user_email" onChange={e=>setUser_email(e.target.value)} value={user_email || " "} required /><br />
+                            <label>Message:<h7>Enter your Message here.. </h7></label>
+                            <textarea name="message" onChange={e=>setMessage(e.target.value)} value={Message || ' '}/><br />
                             <input type="submit" value="Send" /><br />
                         </form>
                     </div>

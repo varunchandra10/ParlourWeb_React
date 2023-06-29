@@ -57,7 +57,7 @@ const ContactUs = () => {
                         </form>
                     </div>
                     <div className='right-side-content'>
-                        <iframe className='map' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d476.11297805723046!2d78.5618887!3d17.3201889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3f44ae13321%3A0x730c71374ce51989!2sQueen&#39;s%20Herbal%20Beauty%20Parlour!5e0!3m2!1sen!2sin!4v1687796609497!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'> </iframe>
+                        <iframe className='map'title='map' src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d476.11297805723046!2d78.5618887!3d17.3201889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3f44ae13321%3A0x730c71374ce51989!2sQueen&#39;s%20Herbal%20Beauty%20Parlour!5e0!3m2!1sen!2sin!4v1687796609497!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'> </iframe>
                     </div>
                 </div>
             </div>

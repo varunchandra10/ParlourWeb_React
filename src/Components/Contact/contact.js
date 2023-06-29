@@ -55,11 +55,11 @@ const ContactUs = () => {
                 <div className='lower-part'>
                     <div className='left-side-content'>
                         <form ref={form} onSubmit={sendEmail}>
-                            <label>Name:<h7>Enter your Name </h7></label>
+                            <label>Name:<h6 className='words'>Enter your Name </h6></label>
                             <input type="text" name="user_name" onChange={e=>setUser_name(e.target.value)} value={user_name || ' '} required /> <br />
-                            <label>Email:<h7>Enter your Email </h7></label>
+                            <label>Email:<h6 className='words'>Enter your Email </h6></label>
                             <input type="email" name="user_email" onChange={e=>setUser_email(e.target.value)} value={user_email || " "} required /><br />
-                            <label>Message:<h7>Enter your Message here.. </h7></label>
+                            <label>Message:<h6 className='words'>Enter your Queries/Message here.. </h6></label>
                             <textarea name="message" onChange={e=>setMessage(e.target.value)} value={Message || ' '}/><br />
                             <input type="submit" value="Send" /><br />
                         </form>

@@ -130,7 +130,9 @@ input[type=text],[type=email], textarea {
     font-size: 2.5vmin;
 }
 
-h7{
+.words{
+    display: inline-block;
+    font-weight: 500;
     font-size: 11px;
     padding: 3px;
     align-items: center;
@@ -170,13 +172,27 @@ h7{
         width:auto;
         height:auto; 
     }
+    .location{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vmin;
+    }
   }
 
   @media only screen and (max-width: 900px){
     .contact-body{
         top: 0%;
         width: 100%;
-        height: 140vh;
+        height: 120vh;
     } 
+  }
 
+  @media only screen and (max-width: 700px){
+    .contact-body{
+        top: 0%;
+        width: 100%;
+        height: 100vh;
+    } 
   }

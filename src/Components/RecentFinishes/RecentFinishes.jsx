@@ -30,6 +30,7 @@ const RecentFinishes = () => {
                             })
                         }
                     </motion.div>
+                <p> &larr; Swipe &rarr;</p>
                 </motion.div>
             </div>
         </div>

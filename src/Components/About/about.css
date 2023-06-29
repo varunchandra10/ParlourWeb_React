@@ -1,0 +1,28 @@
+.about{
+    color:black;
+    padding-top: 90px;
+    width: 80%;
+    margin: auto;
+}
+
+.about h1{
+    font-family:sans ;
+    text-align: center;
+    font-size: 6vmin;
+    color:#39398e;
+}
+
+.abt-content{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3.3vmin;
+    font-weight: 500;
+
+}
+
+.abt-content b,
+.abt-content span{
+    color:#39398e;
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+} 
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(237, 78, 78) ;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+a{
+    cursor: pointer;
+    color: rgb(237, 78, 78) ;
+    text-decoration: none;
+}
+a:hover{
+    color:#39398e;
+}
+@font-face {
+    font-family: 'blanka';
+    src: url('../public/fonts/Blanka-Regular.otf');
+}
+@font-face {
+    font-family: 'Palatino';
+    src: url('../public/fonts/Palatino\ Font.ttf');
+}
+@font-face {
+    font-family: 'Brightoven';
+    src: url('../public/fonts/BRIGHTOVEN.ttf');
+}
+@font-face {
+    font-family: 'Michegar';
+    src: url('../public/fonts/Michegar.ttf');
+}
+@font-face{
+    font-family: 'Montserrat-medium';
+    src: url('../public/fonts/Montserrat-Medium.ttf');
+}

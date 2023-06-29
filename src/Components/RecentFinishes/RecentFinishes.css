@@ -1,0 +1,46 @@
+.recent-body{
+    height: 140vh;
+    align-items: center;
+    padding-top: 90px;
+}
+.recent-heading{
+  font-family:sans ;
+  text-align: center;
+  font-size: 3vmin;
+  color: #39398e;
+  margin-bottom: 90px;
+}
+.Recentfinishes{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.item{
+    min-width: 20rem;
+  }
+  
+  .item img{
+    width: 80%;
+    height: 80%;
+    margin: 40px 0px 0px 35px;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  
+  .inner-carousel{
+    display: flex;
+  }
+  
+  .carousel{
+    background-color: lavender;
+    border-radius: 10px;
+    cursor:grab;
+    overflow: hidden;
+  }
+
+@media only screen and (max-width:500){
+    .recent-body{
+        height: 100vh;
+        padding-top: 90px;
+    }
+}

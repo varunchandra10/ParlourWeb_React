@@ -1,0 +1,28 @@
+.body{
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.5) url('../assets/backgrd.jpg');
+    background-blend-mode:darken ;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.body-content{
+    margin-bottom:150px ;
+    color:whitesmoke;
+    text-align: center;
+}
+.body-content h2{
+    font-family: 'Palatino';
+    font-style: italic;
+    font-size: 4.5vmin;
+}
+.body-content h1{
+    font-family:'Brightoven',monospace;
+    font-weight: 500;
+    font-size: 9vmin;
+    margin-top: 50px;
+}
